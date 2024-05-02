@@ -5,7 +5,7 @@ idade: int
 peso: float
 altura: float
 
-nome = input("Digite deu Nome: ")
+nome = str(input("Digite deu Nome: "))
 idade = int(input("digite sua idade: "))
 peso = float(input("Digite o Peso: "))
 altura = int(input("Digite sua Altura: "))
