@@ -1,9 +1,16 @@
 import os
 os.system("cls||clear")
+soma:int=0
+contador:int=0
 
-soma=0
-contador=0
-numero=int(input("Digite um Número "))
+while True:
+    numero=int(input("Digite um Número: "))
+    
+    if numero>=0:
+        soma+=numero
+        contador+=1
+    else:
+        break    
 
-while(numero>0):
-numero=int(input("Digite um Número "))
+    media=numero/contador    
+    print("Média: ",media)
