@@ -11,7 +11,7 @@ for i in range(QUANTIDADE_NOTAS):
 
 
         if nota <0 or nota>10:
-            print(f"Nota Invalida {nota}")
+            pr0int(f"Nota Invalida {nota}")
         else:
             soma+=nota
             break    
