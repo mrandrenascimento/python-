@@ -1,36 +1,29 @@
-"""
 import os
-
+import sys
+QUANTIDADE_NUMEROS=5
 os.system("clear")
-
-#crinado uma constante 
-QUANTIDADE_NUMEROS=6
+quantidadeNumero=0
+somaNumero=0
+somaPares=0
+somaImpares=0
 pares=0
 impares=0
-contador=0
+maioNumero=0
+menorNumero=sys.maxsize
 numeros=[]
 
-
 for i in range(QUANTIDADE_NUMEROS):
-   
-    numero=float(input("Digite um Número: "))
-    if numero %2==0 :
+    numero=int(input(f"Digite o {i+1}º Número: "))
+    quantidadeNumero+=1
+    somaNumero+=numero
+    if numero %2==0:
         pares+=1
-        
+        somaPares+=numero
     else:
         impares+=1
-        
+        somaImpares+=numero   
     numeros.append(numero)
-
-maiorNumero = max(numeros)
-menorNumero = min(numeros)
-
-
-for i, numero in enumerate(numeros):
-    print(f"{i+1}º Número: {numero}")    
-
-
-print(f"Quantidade Pares: {pares}")
-print(f"Quantidade Impares: {impares}")
-"""
-
+maioNumero=max(numeros)
+menorNumero=min(numeros)
+print(f"Quantidade Pares: {quantidadeNumero}")
+print(f"Quantidade Impares: {somaNumero}")

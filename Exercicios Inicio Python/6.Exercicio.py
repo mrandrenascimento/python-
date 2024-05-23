@@ -2,19 +2,20 @@ import os
 os.system("cls||clear")
  
 
-descricaoProduto=str(input("Digite o Item Desejado:  "))
-quntidadeMorango=float(input("Digite Quantidade:  "))
+pesoMorango=float(input("Digite o Item Desejado:  "))
+quantidadeMorango=float(input("Digite Quantidade:  "))
 valorMorango=float(input("Digite Valor Unitário:  "))
 
-total=quantidadeAdiquirida*valorUnitario
+totalMotrango=quantidadeMorango*valorMorango
 
-if quantidadeAdiquirida<=5:
+if quantidadeMorango<=5 and pesoMorango>10:
         desconto=2.50
-elif quantidadeAdiquirida>5 and quantidadeAdiquirida<=10:
+
+elif quantidadeMorango>5 and pesoMorango<=10:
         desconto=2.20
 
 else:
-    desconto=0.05
+        desconto=0.05
 
 totalApagar=total-(total*desconto)
 

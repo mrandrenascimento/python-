@@ -1,5 +1,5 @@
 import os
-os.system("cls")
+os.system("clear||cls")
 
 #criando uma lista/ vetor
 

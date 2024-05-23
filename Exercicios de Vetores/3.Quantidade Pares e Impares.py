@@ -32,3 +32,4 @@ for i, numero in enumerate(numeros):
 
 print(f"Quantidade Pares: {pares}")
 print(f"Quantidade Impares: {impares}")
+print(f"Maior Número:{maiorNumero}")
